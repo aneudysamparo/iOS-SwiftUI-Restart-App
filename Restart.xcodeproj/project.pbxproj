@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0041589129F8AAC70091919F /* RestartAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041589029F8AAC70091919F /* RestartAppApp.swift */; };
+		0041589129F8AAC70091919F /* RestartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041589029F8AAC70091919F /* RestartApp.swift */; };
 		0041589329F8AAC70091919F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041589229F8AAC70091919F /* ContentView.swift */; };
 		0041589529F8AAC80091919F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0041589429F8AAC80091919F /* Assets.xcassets */; };
 		0041589929F8AAC80091919F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0041589829F8AAC80091919F /* Preview Assets.xcassets */; };
+		004158A129F8AB5B0091919F /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0041589F29F8AB5B0091919F /* chimeup.mp3 */; };
+		004158A229F8AB5B0091919F /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 004158A029F8AB5B0091919F /* success.m4a */; };
+		004158AD29F8AF650091919F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004158AC29F8AF650091919F /* OnboardingView.swift */; };
+		004158AF29F8AF760091919F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004158AE29F8AF760091919F /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0041588D29F8AAC70091919F /* RestartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0041589029F8AAC70091919F /* RestartAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartAppApp.swift; sourceTree = "<group>"; };
+		0041588D29F8AAC70091919F /* Restart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0041589029F8AAC70091919F /* RestartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartApp.swift; sourceTree = "<group>"; };
 		0041589229F8AAC70091919F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0041589429F8AAC80091919F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0041589629F8AAC80091919F /* RestartApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RestartApp.entitlements; sourceTree = "<group>"; };
 		0041589829F8AAC80091919F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0041589F29F8AB5B0091919F /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		004158A029F8AB5B0091919F /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		004158A729F8AE6B0091919F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		004158AC29F8AF650091919F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		004158AE29F8AF760091919F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +45,7 @@
 		0041588429F8AAC70091919F = {
 			isa = PBXGroup;
 			children = (
-				0041588F29F8AAC70091919F /* RestartApp */,
+				0041588F29F8AAC70091919F /* Restart */,
 				0041588E29F8AAC70091919F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +53,25 @@
 		0041588E29F8AAC70091919F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0041588D29F8AAC70091919F /* RestartApp.app */,
+				0041588D29F8AAC70091919F /* Restart.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0041588F29F8AAC70091919F /* RestartApp */ = {
+		0041588F29F8AAC70091919F /* Restart */ = {
 			isa = PBXGroup;
 			children = (
-				0041589029F8AAC70091919F /* RestartAppApp.swift */,
-				0041589229F8AAC70091919F /* ContentView.swift */,
+				004158A729F8AE6B0091919F /* Info.plist */,
+				004158A629F8AC510091919F /* Utilities */,
+				004158A529F8AC3D0091919F /* Views */,
+				004158A329F8AB620091919F /* Sounds */,
+				0041589029F8AAC70091919F /* RestartApp.swift */,
+				004158A429F8AC300091919F /* Screens */,
 				0041589429F8AAC80091919F /* Assets.xcassets */,
 				0041589629F8AAC80091919F /* RestartApp.entitlements */,
 				0041589729F8AAC80091919F /* Preview Content */,
 			);
-			path = RestartApp;
+			path = Restart;
 			sourceTree = "<group>";
 		};
 		0041589729F8AAC80091919F /* Preview Content */ = {
@@ -69,12 +82,45 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		004158A329F8AB620091919F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0041589F29F8AB5B0091919F /* chimeup.mp3 */,
+				004158A029F8AB5B0091919F /* success.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		004158A429F8AC300091919F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0041589229F8AAC70091919F /* ContentView.swift */,
+				004158AC29F8AF650091919F /* OnboardingView.swift */,
+				004158AE29F8AF760091919F /* HomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		004158A529F8AC3D0091919F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		004158A629F8AC510091919F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0041588C29F8AAC70091919F /* RestartApp */ = {
+		0041588C29F8AAC70091919F /* Restart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0041589C29F8AAC80091919F /* Build configuration list for PBXNativeTarget "RestartApp" */;
+			buildConfigurationList = 0041589C29F8AAC80091919F /* Build configuration list for PBXNativeTarget "Restart" */;
 			buildPhases = (
 				0041588929F8AAC70091919F /* Sources */,
 				0041588A29F8AAC70091919F /* Frameworks */,
@@ -84,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = RestartApp;
+			name = Restart;
 			productName = RestartApp;
-			productReference = 0041588D29F8AAC70091919F /* RestartApp.app */;
+			productReference = 0041588D29F8AAC70091919F /* Restart.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0041588829F8AAC70091919F /* Build configuration list for PBXProject "RestartApp" */;
+			buildConfigurationList = 0041588829F8AAC70091919F /* Build configuration list for PBXProject "Restart" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +163,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0041588C29F8AAC70091919F /* RestartApp */,
+				0041588C29F8AAC70091919F /* Restart */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +173,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004158A229F8AB5B0091919F /* success.m4a in Resources */,
+				004158A129F8AB5B0091919F /* chimeup.mp3 in Resources */,
 				0041589929F8AAC80091919F /* Preview Assets.xcassets in Resources */,
 				0041589529F8AAC80091919F /* Assets.xcassets in Resources */,
 			);
@@ -139,8 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004158AD29F8AF650091919F /* OnboardingView.swift in Sources */,
+				004158AF29F8AF760091919F /* HomeView.swift in Sources */,
 				0041589329F8AAC70091919F /* ContentView.swift in Sources */,
-				0041589129F8AAC70091919F /* RestartAppApp.swift in Sources */,
+				0041589129F8AAC70091919F /* RestartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,14 +311,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = RestartApp/RestartApp.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Restart/RestartApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RestartApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Restart/Preview Content\"";
 				DEVELOPMENT_TEAM = WPX6A59242;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Restart/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Restart;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -277,8 +331,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -299,14 +352,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = RestartApp/RestartApp.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Restart/RestartApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RestartApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Restart/Preview Content\"";
 				DEVELOPMENT_TEAM = WPX6A59242;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Restart/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Restart;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -315,8 +372,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -335,7 +391,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0041588829F8AAC70091919F /* Build configuration list for PBXProject "RestartApp" */ = {
+		0041588829F8AAC70091919F /* Build configuration list for PBXProject "Restart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0041589A29F8AAC80091919F /* Debug */,
@@ -344,7 +400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0041589C29F8AAC80091919F /* Build configuration list for PBXNativeTarget "RestartApp" */ = {
+		0041589C29F8AAC80091919F /* Build configuration list for PBXNativeTarget "Restart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0041589D29F8AAC80091919F /* Debug */,
