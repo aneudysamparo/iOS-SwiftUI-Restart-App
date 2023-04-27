@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @AppStorage("onboarding") var isOnboardingViewActive: Bool = false
+    @AppStorage(Constants.OnboardingKey) var isOnboardingViewActive: Bool = false
     @State var isAnimating: Bool = false
     
     var body: some View {

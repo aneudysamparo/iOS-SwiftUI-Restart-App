@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     
-    @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
+    @AppStorage(Constants.OnboardingKey) var isOnboardingViewActive: Bool = true
     
     @State private var buttonWidth: Double = UIScreen.main.bounds.width - 80
     @State private var buttonOffset: CGFloat = 0
@@ -20,7 +20,7 @@ struct OnboardingView: View {
     
     var body: some View {
         ZStack {
-            Color("ColorBlue")
+            Color(ColorNames.ColorBlue)
                 .ignoresSafeArea(.all, edges: .all)
             
             VStack(spacing: 20) {
@@ -123,7 +123,7 @@ struct OnboardingView: View {
                     // Part 3
                     HStack {
                         Capsule()
-                            .fill(Color("ColorRed"))
+                            .fill(Color(ColorNames.ColorRed))
                             .frame(width: buttonOffset + 80)
                         
                         Spacer()
@@ -133,7 +133,7 @@ struct OnboardingView: View {
                     HStack {
                         ZStack {
                             Circle()
-                                .fill(Color("ColorRed"))
+                                .fill(Color(ColorNames.ColorRed))
                             Circle()
                                 .fill(Color.black.opacity(0.15))
                                 .padding(8)
@@ -154,7 +154,7 @@ struct OnboardingView: View {
                                     
                                     withAnimation(.easeOut(duration: 0.4)) {
                                         if buttonOffset > (buttonWidth / 1.6)  {
-                                            playSound(sound: "chimeup", type: "mp3")
+                                            playSound(sound: "chimeup", type: FileExtensions.mp3.rawValue)
                                             buttonOffset = buttonWidth - 80
                                             isOnboardingViewActive = false
                                         } else {
